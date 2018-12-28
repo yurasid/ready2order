@@ -1,10 +1,10 @@
 import * as firebase from "firebase/app";
 import "firebase/auth";
 import "firebase/database";
-import config from "../../config.dev.js";
+import { firebaseDevConfig } from "../../config.dev.js";
 
 if (!firebase.apps.length) {
-  firebase.initializeApp(config);
+  firebase.initializeApp(firebaseDevConfig);
 }
 
 export const auth = firebase.auth();

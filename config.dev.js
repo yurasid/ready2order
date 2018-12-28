@@ -1,4 +1,4 @@
-export default {
+export const firebaseDevConfig = {
   apiKey: "AIzaSyAUnjoOFn92iWVcobGjNXAm5_iQpa_eKxw",
   authDomain: "r2order.firebaseapp.com",
   databaseURL: "https://r2order.firebaseio.com",

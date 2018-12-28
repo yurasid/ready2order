@@ -1,8 +1,19 @@
 import * as React from "react";
-import { auth } from "../../firebase";
+import { Link, withRouter } from "react-router-dom";
+import * as routes from "../../constants/routes";
+import { SignUpForm } from "./SignUpForm";
 
-export const SignOutButton = () => (
-  <button type="button" onClick={auth.doSignOut}>
-    Sign Out
-  </button>
+const SignUpComponent = () => (
+  <div>
+    <h1>SignUp</h1>
+    <SignUpForm />
+  </div>
 );
+
+export const SignUpLink = () => (
+  <p>
+    Don't have an account? <Link to={routes.SIGN_UP}>Sign Up</Link>
+  </p>
+);
+
+export const SignUp = withRouter(SignUpComponent);

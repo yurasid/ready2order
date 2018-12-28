@@ -1,7 +1,6 @@
 import * as React from "react";
 import { connect } from "react-redux";
 import { Link } from "react-router-dom";
-
 import * as routes from "../../constants/routes";
 import { SignOutButton } from "../SignOut";
 
@@ -41,7 +40,4 @@ const mapStateToProps = (state: any) => ({
   authUser: state.sessionState.authUser
 });
 
-export const Home = compose(
-  withRouter,
-  connect(mapStateToProps)
-)(NavigationComponent);
+export const Navigation = connect(mapStateToProps)(NavigationComponent);

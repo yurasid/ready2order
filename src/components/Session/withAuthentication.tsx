@@ -38,4 +38,3 @@ export const withAuthentication = (Component: any) => {
     mapDispatchToProps
   )(WithAuthentication);
 };
-Create src/components/Sessio

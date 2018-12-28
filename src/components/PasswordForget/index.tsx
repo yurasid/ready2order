@@ -1,7 +1,7 @@
 import * as React from "react";
 import { Link } from "react-router-dom";
-import { PasswordForgetForm } from "./PasswordForgetForm";
 import * as routes from "../../constants/routes"
+import { PasswordForgetForm } from "./PasswordForgetForm";
 
 export const PasswordForget = () => (
   <div>

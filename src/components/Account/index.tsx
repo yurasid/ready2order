@@ -1,11 +1,11 @@
-import * as React from "react";
-import { connect } from "react-redux";
-import { compose } from "recompose";
-import { withRouter } from 'react-router-dom'
+import * as React from 'react';
+import { connect } from 'react-redux';
+import { withRouter } from 'react-router-dom';
+import { compose } from 'recompose';
+import { PasswordChangeForm } from '../PasswordChange';
+import { PasswordForgetForm } from '../PasswordForget/PasswordForgetForm';
+import { withAuthorization } from '../Session/withAuthorization';
 
-import { PasswordChangeForm } from "../PasswordChange";
-import { PasswordForgetForm } from "../PasswordForget/PasswordForgetForm";
-import { withAuthorization } from "../Session/withAuthorization";
 
 const AccountComponent = ({ authUser }: any) => (
   <div>

@@ -1,7 +1,7 @@
 import * as React from "react";
 import { connect } from "react-redux";
-import { compose } from "recompose";
 import { withRouter } from 'react-router-dom'
+import { compose } from "recompose";
 
 import { db } from "../../firebase";
 import { withAuthorization } from "../Session/withAuthorization";

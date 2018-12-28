@@ -1,31 +1,28 @@
 {
   "name": "ready2order",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/yurasid/ready2order.git"
-  },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/yurasid/ready2order/issues"
-  },
-  "homepage": "https://github.com/yurasid/ready2order#readme",
-  "devDependencies": {
-    "awesome-typescript-loader": "^5.2.1",
-    "source-map-loader": "^0.2.4",
-    "typescript": "^3.2.2",
-    "webpack": "^4.27.1"
-  },
+  "version": "0.1.0",
+  "private": true,
   "dependencies": {
-    "@types/react": "^16.7.17",
+    "firebase": "^5.7.2",
+    "react": "^16.7.0",
+    "react-dom": "^16.7.0",
+    "react-redux": "^6.0.0",
+    "react-router-dom": "^4.3.1",
+    "react-scripts-ts": "3.1.0",
+    "recompose": "^0.30.0",
+    "redux": "^4.0.1"
+  },
+  "scripts": {
+    "start": "react-scripts-ts start",
+    "build": "react-scripts-ts build",
+    "test": "react-scripts-ts test --env=jsdom",
+    "eject": "react-scripts-ts eject"
+  },
+  "devDependencies": {
+    "@types/jest": "^23.3.10",
+    "@types/node": "^10.12.18",
+    "@types/react": "^16.7.18",
     "@types/react-dom": "^16.0.11",
-    "react": "^16.6.3",
-    "react-dom": "^16.6.3"
+    "typescript": "^3.2.2"
   }
 }
